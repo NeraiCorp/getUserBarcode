@@ -1,7 +1,7 @@
 getUserBarcode
 ========
 
-*This is a fork of the QuaggaJS project, see [this issue](https://github.com/serratus/quaggaJS/issues/300) for more information and this issue on tasks to complete for the move from QuaggaJS to getUserBarcode. Thank-you.*
+*This is a fork of the QuaggaJS project, see [this issue](https://github.com/serratus/quaggaJS/issues/300) for more information and [this issue](https://github.com/NeraiCorp/getUserBarcode/issues/1) on tasks to complete for the move from QuaggaJS to getUserBarcode. Thank-you.*
 
 - [Changelog](#changelog) (2017-06-07)
 - [Browser Support](#browser-support)

@@ -1,5 +1,5 @@
 {
-  "name": "quagga",
+  "name": "getUserBarcode",
   "version": "0.12.1",
   "description": "An advanced barcode-scanner written in JavaScript",
   "main": "lib/quagga.js",
@@ -78,10 +78,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/serratus/quaggaJS.git"
+    "url": "https://github.com/NeraiCorp/getUserBarcode.git"
   },
   "bugs": {
-    "url": "https://github.com/serratus/quaggaJS/issues"
+    "url": "https://github.com/NeraiCorp/getUserBarcode/issues"
   },
   "keywords": [
     "quagga",

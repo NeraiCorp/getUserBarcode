@@ -1,5 +1,7 @@
-quaggaJS
+getUserBarcode
 ========
+
+*This is a fork of the QuaggaJS project, see [this issue](https://github.com/serratus/quaggaJS/issues/300) for more information and this issue on tasks to complete for the move from QuaggaJS to getUserBarcode. Thank-you.*
 
 - [Changelog](#changelog) (2017-06-07)
 - [Browser Support](#browser-support)
@@ -10,9 +12,9 @@ quaggaJS
 - [Tips & Tricks](#tipsandtricks)
 - [Sponsors](#sponsors)
 
-## What is QuaggaJS?
+## What is getUserBarcode?
 
-QuaggaJS is a barcode-scanner entirely written in JavaScript supporting real-
+getUserBarcode (formally QuaggaJS) is a barcode-scanner entirely written in JavaScript supporting real-
 time localization and decoding of various types of barcodes such as __EAN__,
 __CODE 128__, __CODE 39__, __EAN 8__, __UPC-A__, __UPC-C__, __I2of5__,
 __2of5__, __CODE 93__ and __CODABAR__. The library is also capable of using
@@ -93,7 +95,7 @@ The above condition evaluates to:
 
 ## <a name="installing">Installing</a>
 
-QuaggaJS can be installed using __npm__, __bower__, or by including it with
+getUserBarcode can be installed using __npm__, __bower__, or by including it with
 the __script__ tag.
 
 ### NPM
@@ -110,12 +112,12 @@ const Quagga = require('quagga').default; // Common JS (important: default)
 ```
 
 Currently, the full functionality is only available through the browser. When
-using QuaggaJS within __node__, only file-based decoding is available. See the
+using getUserBarcode within __node__, only file-based decoding is available. See the
 example for [node_examples](#node-example).
 
 ### Bower
 
-You can also install QuaggaJS through __bower__:
+You can also install getUserBarcode (quagga) through __bower__:
 
 ```console
 > bower install quagga
@@ -158,7 +160,7 @@ also creates a `quagga.js` file in the `lib` folder.
 ## <a name="api">API</a>
 
 You can check out the [examples][github_examples] to get an idea of how to
-use QuaggaJS. Basically the library exposes the following API:
+use getUserBarcode. Basically the library exposes the following API:
 
 ### <a name="quaggainit">Quagga.init(config, callback)</a>
 
@@ -171,7 +173,7 @@ may be the `inputStream.type` is set to `LiveStream`, but the browser does
 not support this API, or simply if the user denies the permission to use the
 camera.
 
-If you do not specify a target, QuaggaJS would look for an element that matches
+If you do not specify a target, getUserBarcode would look for an element that matches
 the CSS selector `#interactive.viewport` (for backwards compatibility).
 `target` can be a string (CSS selector matching one of your DOM node) or a DOM
 node.
@@ -312,7 +314,7 @@ empty.
 
 ## <a name="configobject">Configuration</a>
 
-The configuration that ships with QuaggaJS covers the default use-cases and can
+The configuration that ships with getUserBarcode covers the default use-cases and can
 be fine-tuned for specific requirements.
 
 The configuration is managed by the `config` object defining the following
@@ -332,7 +334,7 @@ high-level properties:
 
 ### numOfWorkers
 
-QuaggaJS supports web-workers out of the box and runs with `4` workers in its
+getUserBarcode supports web-workers out of the box and runs with `4` workers in its
 default configuration. The number should align with the number of cores
 available in your targeted devices.
 
@@ -343,7 +345,7 @@ or make use of [core-estimator](https://github.com/oftn/core-estimator).
 
 ### locate
 
-One of the main features of QuaggaJS is its ability to locate a barcode in a
+One of the main features of getUserBarcode is its ability to locate a barcode in a
 given image. The `locate` property controls whether this feature is turned on
 (default) or off.
 
@@ -360,7 +362,7 @@ time.
 
 ### inputStream
 
-The `inputStream` property defines the sources of images/videos within QuaggaJS.
+The `inputStream` property defines the sources of images/videos within getUserBarcode.
 
 ```javascript
 {
@@ -413,7 +415,7 @@ CPU power are of concern.
 
 ### decoder
 
-QuaggaJS usually runs in a two-stage manner (`locate` is set to `true`) where,
+getUserBarcode usually runs in a two-stage manner (`locate` is set to `true`) where,
 after the barcode is located, the decoding process starts. Decoding is the
 process of converting the bars into its true meaning. Most of the configuration
 options within the `decoder` are for debugging/visualization purposes only.
@@ -565,7 +567,7 @@ Quagga.decodeSingle({
 
 ### <a name="node-example">Using node</a>
 
-The following example illustrates the use of QuaggaJS within a node
+The following example illustrates the use of getUserBarcode within a node
 environment. It's almost identical to the browser version with the difference
 that node does not support web-workers out of the box. Therefore the config
 property `numOfWorkers` must be explicitly set to `0`.

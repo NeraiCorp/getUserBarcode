@@ -117,10 +117,10 @@ example for [node_examples](#node-example).
 
 ### Bower
 
-You can also install getUserBarcode (quagga) through __bower__:
+You can also install getUserBarcode through __bower__:
 
 ```console
-> bower install quagga
+> bower install getuserbarcode
 ```
 
 ### Script-Tag Anno 1998
